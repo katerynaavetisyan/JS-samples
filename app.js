@@ -1,9 +1,9 @@
 let numOne = 1;
-let numTwo = 2;
 
 function totalNum() {
-    numTwo = 3;
+    let numTwo = 3;
+    console.log(numOne)
 }
 totalNum();
-console.log(numOne)
+
 console.log(numTwo)
