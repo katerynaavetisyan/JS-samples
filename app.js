@@ -1,6 +1,8 @@
-let animal = "Giant Pacific Octopus";
-function observe() {
-    let animal = "Pajama Squid";
-    console.log(animal);
+const creature = "Common Sea Dragon";
+
+function scubaDive() {
+    const creature = "Spanish Dancer"; //A type of sea slug
+    console.log(creature);
 }
-observe();
+
+scubaDive();
