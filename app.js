@@ -1,9 +1,6 @@
-let numOne = 1;
-
-function totalNum() {
-    let numTwo = 3;
-    console.log(numOne)
+let animal = "Giant Pacific Octopus";
+function observe() {
+    let animal = "Pajama Squid";
+    console.log(animal);
 }
-totalNum();
-
-console.log(numTwo)
+observe();
