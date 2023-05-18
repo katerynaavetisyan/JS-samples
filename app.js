@@ -1,17 +1,9 @@
-function parent() {
-    const num1 = 3;
-    console.log("parentFunc")
+function calculateDogAge(age, conversionRate) {
+    let dogYears = conversionRate * age;
+    console.log("Your doggie is " + dogYears + " years old in dog years!");
 
-    function child() {
-        const num2 = 2;
-        console.log("childFunc")
-        console.log(num1)
-    }
-
-    console.log(num2);
-    child();
 }
-parent();
 
-
-
+calculateDogAge(1, 7);
+calculateDogAge(0.5, 8);
+calculateDogAge(12, 10);
