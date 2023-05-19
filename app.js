@@ -1,8 +1,8 @@
-const square = {
-    area: function (side) {
-        return side * side;
-    },
-    perimeter: function (side) {
-        return side * 4;
+const hen = {
+    name: 'Helen',
+    eggCount: 0,
+    layAnEgg() {
+        this.eggCount++;
+        return 'EGG';
     }
-}
+};
