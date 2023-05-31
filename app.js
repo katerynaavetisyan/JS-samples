@@ -1,29 +1,13 @@
-// const fullNames = [{ first: 'Albus', last: 'Dumbledore' }, { first: 'Harry', last: 'Potter' }, { first: 'Hermione', last: 'Granger' }, { first: 'Ron', last: 'Weasley' }, { first: 'Rubeus', last: 'Hagrid' }, { first: 'Minerva', last: 'McGonagall' }, { first: 'Severus', last: 'Snape' }];
+const num = 102;
 
-// const firstNames = fullNames.map(function (person) {
-//     return person.first;
-// })
-
-// const x = 3
-
-// if (x > 3 || x == 3) {
-//     console.log(x > 3)
-//     console.log("if block")
-// } else {
-//     console.log(x < 3)
-//     console.log("else block")
-// }
-
-
-function getColor(phrase) {
-
-    if (phrase === 'stop') {
-        console.log('red')
-    } else if (phrase === 'slow') {
-        console.log('yellow')
-    } else if (phrase === 'go') {
-        console.log('green')
-    } else {
-        console.log('purple')
+if (num <= 100) {
+    if (num >= 50) {
+        console.log("HEY!");
+    }
+} else {
+    if (num < 103) {
+        if (num % 2 === 0) {
+            console.log("YOU GOT ME!");
+        }
     }
 }
