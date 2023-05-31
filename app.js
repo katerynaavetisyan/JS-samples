@@ -4,12 +4,26 @@
 //     return person.first;
 // })
 
-const x = 3
+// const x = 3
 
-if (x > 3 || x == 3) {
-    console.log(x > 3)
-    console.log("if block")
-} else {
-    console.log(x < 3)
-    console.log("else block")
+// if (x > 3 || x == 3) {
+//     console.log(x > 3)
+//     console.log("if block")
+// } else {
+//     console.log(x < 3)
+//     console.log("else block")
+// }
+
+
+function getColor(phrase) {
+
+    if (phrase === 'stop') {
+        console.log('red')
+    } else if (phrase === 'slow') {
+        console.log('yellow')
+    } else if (phrase === 'go') {
+        console.log('green')
+    } else {
+        console.log('purple')
+    }
 }
