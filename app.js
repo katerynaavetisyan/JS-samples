@@ -23,15 +23,15 @@
 // });
 // console.log('forEach result:', newMappedArr)
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-let result = []
-function multipliedByTwo(number) {
-    return number * 10;
-}
-for (i = 0; i < numbers.length; i++) {
-    result.push(multipliedByTwo(numbers[i]))
-}
-console.log(result)
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let result = []
+// function multipliedByTwo(number) {
+//     return number * 10;
+// }
+// for (i = 0; i < numbers.length; i++) {
+//     result.push(multipliedByTwo(numbers[i]))
+// }
+// console.log(result)
 
 
 // console.log(element)
@@ -50,3 +50,38 @@ console.log(result)
 //     numbers[i] = multipliedByTwo(numbers[i])
 // }
 // console.log(numbers)
+
+
+
+/** 
+  * Task description: Write a method that creates a new array with given values 
+  * Expected Result: (3, 'a') => ['a', 'a', 'a'] 
+  * Task Complexity: 1 of 5 
+  // * @param {number} arraySize - size of array 
+  // * @param {?} value - value to fill 
+  // * @returns {Array} 
+*/
+// const fill = (arraySize, value) => {
+//     let resultArray = []
+//     for (i = 0; i < arraySize; i++) {
+//         resultArray.push(value)
+//     }
+//     return resultArray
+// }
+// const data = 2;
+// const valueToFill = 'b';
+// console.log(fill(data, valueToFill)) // ['a', 'a', 'a']
+
+
+let array1 = [];
+function sortThreeNumbers(num1, num2, num3) {
+  console.log(num1, num2, num3);
+  array1.push(num1, num2, num3);
+}
+console.log(sortThreeNumbers(3, 6, 4));
+array1.sort();
+console.log(array1)
+
+// let array1 = [3, 6, 4]
+// array1.sort();
+// console.log(array1)
