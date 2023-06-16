@@ -1,13 +1,13 @@
-const person1 = {
-    firstName: 'John',
-    lastName: 'Doe',
-    age: 33,
-}
-const person2 = {
-    firstName: 'Anna',
-    lastName: 'Johnson',
-    age: 30,
-}
+// const person1 = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     age: 33,
+// }
+// const person2 = {
+//     firstName: 'Anna',
+//     lastName: 'Johnson',
+//     age: 30,
+// }
 
 //print person1 first name one time
 //console.log(person1.firstName)
@@ -32,10 +32,10 @@ const person2 = {
 //and prints:
 //  num1 is: 
 //  num2 is: 
-function printTwoNums(num1, num2) {
-    console.log('num1 is:', num1)
-    console.log('num2 is:', num2)
-}
+// function printTwoNums(num1, num2) {
+//     console.log('num1 is:', num1)
+//     console.log('num2 is:', num2)
+// }
 // printTwoNums(3, 5)
 
 //create a function numberChecker
@@ -43,80 +43,106 @@ function printTwoNums(num1, num2) {
 //if num is more then 10 print: number you entered is larger than 10
 //if num is less than 10 print: number is lesser than 10
 //if num is 10 print: number you entered is 10.
-function numberChecker(num) {
-    if (num > 10) {
-        console.log('number you entered is larger than 10')
-    } else if (num < 10) {
-        console.log('number is lesser than 10')
-    } else {
-        console.log('number you entered is 10')
-    }
-}
+
+// function numberChecker(num) {
+//     if (num > 10) {
+//         console.log('number you entered is larger than 10')
+//     } else if (num < 10) {
+//         console.log('number is lesser than 10')
+//     } else {
+//         console.log('number you entered is 10')
+//     }
+// }
 // numberChecker(9)
+
+
 
 //function married accepts two objects(husband and wife)
 //and updates wife's last to husband's last name
 //also adds key/value pair:
 //  key: isMarried
 //  value: true
-function married(husband, wife) {
-    wife.lastName = husband.lastName;
-    husband.isMarried = true;
-    wife.isMarried = true;
-    // console.log(husband)
-    // console.log(wife)
-}
-married(person1, person2)
+// function married(husband, wife) {
+//     wife.lastName = husband.lastName;
+//     husband.isMarried = true;
+//     wife.isMarried = true;
+//     // console.log(husband)
+//     // console.log(wife)
+// }
+// married(person1, person2)
 
 
 //create variables for all data type. Values can be anything as
 //long as data type is correct. Print each data type of those
 //variables
 
-let numbers = [1, 2, 3, 4, 5, 6]
-console.log(typeof numbers)
+// let numbers = [1, 2, 3, 4, 5, 6]
+// console.log(typeof numbers)
 
 
-let updatedNumbers = numbers.map((number) => number + 2)
-let updatedNumbers2 = numbers.map(function (number) {
-    return number + 20;
-})
-function sumNums2(num1, num2) {
-    return num1 + num2;
+// let updatedNumbers = numbers.map((number) => number + 2)
+// let updatedNumbers2 = numbers.map(function (number) {
+//     return number + 20;
+// })
+// function sumNums2(num1, num2) {
+//     return num1 + num2;
+// }
+// console.log(updatedNumbers2);
+
+
+
+// let numberVar = 2;
+// console.log(typeof numberVar)
+
+
+// let boolean = true
+// console.log(typeof boolean)
+
+
+// let nullVar = null
+// console.log(typeof nullVar)
+
+
+// let bird = "dove"
+// console.log(typeof bird)
+
+
+// let undefinedVar = undefined
+// console.log(typeof undefinedVar)
+
+
+// let Anna = {
+//     age: 33,
+//     mood: 'happy'
+// }
+// console.log(typeof Anna)
+
+
+// let nanType = NaN;
+// console.log(typeof nanType);
+
+
+//create a function sumNumbers that accepts two
+//numbers as params and prints: Sum of num1 and num2 is: (result here) 
+//if either param is not a type of number 
+// print: Please, enter numbers.
+//sumNumbers(1,2)
+//result: Sum of 1 and 2 is: 3;
+//sumNumbers('1', 2) or sumNumbers(1, '2') or sumNumbers('1', '2')
+//result: Please, enter numbers.
+
+function sumNumbers(num1, num2) {
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+        console.log('Please, enter numbers.')
+    } else {
+        const result = num1 + num2;
+        console.log(`Sum of ${num1} and ${num2} = ${result}`)
+    }
 }
-console.log(updatedNumbers2);
+sumNumbers(1, 5)
 
 
 
-let numberVar = 2;
-console.log(typeof numberVar)
-
-
-let boolean = true
-console.log(typeof boolean)
-
-
-let nullVar = null
-console.log(typeof nullVar)
-
-
-let bird = "dove"
-console.log(typeof bird)
-
-
-let undefinedVar = undefined
-console.log(typeof undefinedVar)
-
-
-let Anna = {
-    age: 33,
-    mood: 'happy'
-}
-console.log(typeof Anna)
-
-
-let nanType = NaN;
-console.log(typeof nanType);
 
 
 
