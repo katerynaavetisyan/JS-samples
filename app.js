@@ -132,11 +132,11 @@
 //result: Please, enter numbers.
 
 function sumNumbers(num1, num2) {
-    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
-        console.log('Please, enter numbers.')
-    } else {
+    if (typeof num1 === 'number' || typeof num2 === 'number') {
         const result = num1 + num2;
         console.log(`Sum of ${num1} and ${num2} = ${result}`)
+    } else {
+        console.log('Please, enter numbers.')
     }
 }
 sumNumbers(1, 5)
