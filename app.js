@@ -1,180 +1,275 @@
-// const person1 = {
-//     firstName: 'John',
-//     lastName: 'Doe',
-//     age: 33,
-// }
-// const person2 = {
-//     firstName: 'Anna',
-//     lastName: 'Johnson',
-//     age: 30,
-// }
 
-//print person1 first name one time
-//console.log(person1.firstName)
-//correct
+let a = prompt('Enter a number');
 
-//update person1 first name to Tom
-// person1.firstName = 'Tom'
-//console.log(person1)
-//correct
+if (a === '3') {
+    console.log("a is 3");
+} else if (a === '4') {
+    console.log("a is 4");
+} else {
+    console.log("a is neither 3, nor 4");
+}
 
-// //person1 is 2 years elder now. Need to udpate age property.
-// person1.age = 35
-// console.log(person1.age)
+if (x === 3) {                          // Example 1
+    console.log("x is 3");
+}
 
-//add new key/value pair to object person1: 
-//  key: yearOfBirth
-//  value: 1988
-// person1.yearOfBirth = 1988
-//console.log(person1)
+if (x === 3) {                          // Example 2
+    console.log("x is 3");
+} else {
+    console.log("x is NOT 3");
+}
 
-//create a function printTwoNums that accepts two params: num1 and num2
-//and prints:
-//  num1 is: 
-//  num2 is: 
-// function printTwoNums(num1, num2) {
-//     console.log('num1 is:', num1)
-//     console.log('num2 is:', num2)
-// }
-// printTwoNums(3, 5)
+if (x === 3) console.log("x is 3");     // Example 3
 
-//create a function numberChecker
-//function accepts one parameter num
-//if num is more then 10 print: number you entered is larger than 10
-//if num is less than 10 print: number is lesser than 10
-//if num is 10 print: number you entered is 10.
+if (x === 3)                            // Example 4
+    console.log("x is 3");
 
-// function numberChecker(num) {
-//     if (num > 10) {
-//         console.log('number you entered is larger than 10')
-//     } else if (num < 10) {
-//         console.log('number is lesser than 10')
-//     } else {
-//         console.log('number you entered is 10')
-//     }
-// }
-// numberChecker(9)
+if (x === 3)                            // Example 5
+    console.log("x is 3");
+else
+    console.log("x is NOT 3");
 
-
-
-//function married accepts two objects(husband and wife)
-//and updates wife's last to husband's last name
-//also adds key/value pair:
-//  key: isMarried
-//  value: true
-// function married(husband, wife) {
-//     wife.lastName = husband.lastName;
-//     husband.isMarried = true;
-//     wife.isMarried = true;
-//     // console.log(husband)
-//     // console.log(wife)
-// }
-// married(person1, person2)
-
-
-//create variables for all data type. Values can be anything as
-//long as data type is correct. Print each data type of those
-//variables
-
-// let numbers = [1, 2, 3, 4, 5, 6]
-// console.log(typeof numbers)
-
-
-// let updatedNumbers = numbers.map((number) => number + 2)
-// let updatedNumbers2 = numbers.map(function (number) {
-//     return number + 20;
-// })
-// function sumNums2(num1, num2) {
-//     return num1 + num2;
-// }
-// console.log(updatedNumbers2);
-
-
-
-// let numberVar = 2;
-// console.log(typeof numberVar)
-
-
-// let boolean = true
-// console.log(typeof boolean)
-
-
-// let nullVar = null
-// console.log(typeof nullVar)
-
-
-// let bird = "dove"
-// console.log(typeof bird)
-
-
-// let undefinedVar = undefined
-// console.log(typeof undefinedVar)
-
-
-// let Anna = {
-//     age: 33,
-//     mood: 'happy'
-// }
-// console.log(typeof Anna)
-
-
-// let nanType = NaN;
-// console.log(typeof nanType);
-
-
-//create a function sumNumbers that accepts two
-//numbers as params and prints: Sum of num1 and num2 is: (result here) 
-//if either param is not a type of number 
-// print: Please, enter numbers.
-//sumNumbers(1,2)
-//result: Sum of 1 and 2 is: 3;
-//sumNumbers('1', 2) or sumNumbers(1, '2') or sumNumbers('1', '2')
-//result: Please, enter numbers.
-
-function sumNumbers(num1, num2) {
-    if (typeof num1 === 'number' || typeof num2 === 'number') {
-        const result = num1 + num2;
-        console.log(`Sum of ${num1} and ${num2} = ${result}`)
+if (x === 3) {                          // Example 6
+    console.log('x is 3');
+} else {
+    if (x === 4) {
+        console.log('x is 4');
     } else {
-        console.log('Please, enter numbers.')
+        console.log('x is NOT 3 or 4');
     }
 }
-sumNumbers(1, 5)
+
+if (x === 3) {                          // Example 7
+    console.log("x is 3");
+} else if (x === 4) {
+    console.log("x is 4");
+} else {
+    console.log('x is NOT 3 or 4');
+}
+
+if (x === 3)
+    console.log('x is 3');
+console.log('x is an odd number');
+  > 5 === 4
+= false
+
+    > 'abc' === 'abc'
+= true
+
+    > 'abc' === 'abcd'
+= false
+
+    > 'abc' === 'aBc'
+= false
+
+    > '5' === '5'
+= true
+
+    > '5' === '6'
+= false
+
+    > 5 === '5'
+= false
+
+    > '' === 0
+= false
+
+    > 5 !== 5
+= false
+
+    > 5 !== 4
+= true
+
+    > 4 !== 156
+= true
+
+    > 'abc' !== 'def'
+= true
+
+    > 'abc' !== 'aBc'
+= true
+
+    > 5 !== '5'
+= true
+
+    > 5 == 5
+= true
+
+    > 5 == 4
+= false
+
+    > 5 == '5'
+= true
+
+    > '' == 0
+= true
 
 
 
+    > 5 != 5
+= false
+
+    > 5 != 4
+= true
+
+    > 5 != '5'
+= false
+
+    > '' != 0
+= false
+
+
+    > 4 < 5
+= true
+
+    > 5 < 4
+= false
+
+    > 5 < 5
+= false
+
+    > "4" < "5"
+= true
+
+    > "42" < "402"
+= false
+
+    > "42" < "420"
+= true
+
+    > "42" < 420
+= true
+
+
+    > 4 > 5
+= false
+
+    > 5 > 4
+= true
+
+    > 5 > 5
+= false
+
+    > "4" > "5"
+= false
+
+    > "42" > "402"
+= true
+
+    > "42" > "420"
+= false
+
+    > "42" > 420
+= false
+
+    > 4 <= 5
+= true
+
+    > 5 <= 4
+= false
+
+    > 5 <= 5
+= true
+
+
+    > 4 >= 5
+= false
+
+    > 5 >= 4
+= true
+
+    > 5 >= 5
+= true
 
 
 
+    > !true
+= false
+
+    > !false
+= true
+
+    > !(4 === 4)
+= false
+
+    > !(4 !== 4)
+= true
 
 
-//create a function `printFirstNameNumberOfTimes`
-//function has to accept two parameters:
-// 1. person object like `person1`
-// 2. number of times first name is printed(console.log) 
-//example: printFirstNameNumberOfTimes(person1, 3)
-//resunt: 
-//  fist name is John
-//  fist name is John
-//  fist name is John
+    > true && true
+= true
 
-//create person2 object with new info 
-//and run printFirstNameNumberOfTimes for person1 and person2
+    > true && false
+= false
+
+    > false && true
+= false
+
+    > false && false
+= false
+
+    > (4 === 4) && (5 === 5)
+= true
+
+    > (4 === 4) && (5 === 6)
+= false
+
+    > (4 === 5) && (5 === 5)
+= false
+
+    > (4 === 5) && (5 === 6)
+= false
 
 
-// function printFirstNameNumberOfTimes(person, numberOfTimes) {
-//     for (i = 0; i < numberOfTimes; i++) {
-//         console.log(`Frist name is ${person.firstName}`)
-//     }
-// }
+    > true || true
+= true
 
-// printFirstNameNumberOfTimes({
-//     firstName: 'Artur'
-// }, 1)
+    > true || false
+= true
+
+    > false || true
+= true
+
+    > false || false
+= false
+
+    > (4 === 4) || (5 === 5)
+= true
+
+    > (4 === 4) || (5 === 6)
+= true
+
+    > (4 === 5) || (5 === 5)
+= true
+
+    > (4 === 5) || (5 === 6)
+= false
+
+    > isRed(item) && isPortable(item)
+    > isGreen(item) || hasWheels(item)
 
 
-//createa a function `updateFirstName` that accepts two params:
-//person object like person1
-//new newFirstName - string
-//function updates/changes old firstName to newFirstName 
-//and returns updated object
+
+let a = 5
+if (a) {
+    console.log("how can this be true?");
+} else {
+    console.log("it is not true");
+
+
+
+} let b = 0
+if (b) {
+    console.log("how can this be true?");
+} else {
+    console.log("it is not true");
+}
+
+
+let x;
+
+if (x = 5) {
+    console.log("how can this be true?");
+} else {
+    console.log("it is not true");
+}
