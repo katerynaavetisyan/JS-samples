@@ -1,27 +1,6 @@
-// const midterms = {
-//     tom: 96,
-//     dan: 99
-// }
-// midterms.thomas = 'C+'
-// midterms['katya'] = 'A+'
+const numOne = 10;
+const numTwo = 20;
+//using template print: Sum of 1 and 2 is 3.
+// if numbers change the result needs to change as well
 
-
-// console.log('hi' === 'hi')
-// console.log(['hi', 'bye'] === ['hi', 'bye'])
-// console.log([1] === [1])
-// console.log([1] == [1])
-// console.log([] === [])
-
-// let arrayOne = [1, 2, 3]
-// let arrayTwo = [1, 2, 3]
-
-let nums = [3, 4, 5]
-let numsCopy = nums;
-console.log(nums)
-console.log(numsCopy)
-nums.push(6)
-console.log(nums)
-console.log(numsCopy)
-numsCopy.pop(6)
-console.log(nums)
-console.log(numsCopy)
+console.log(`Sum of ${numOne} and ${numTwo} is ${numOne + numTwo}`)
