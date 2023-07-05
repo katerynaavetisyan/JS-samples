@@ -1,27 +1,19 @@
-const subreddits = ['books', 'cringe', 'chickens', 'funny']
-for (let i = 0; i < subreddits.length; i++) {
-    console.log(`Visit reddit.com/r/${subreddits[i]}`)
+const testScores = {
+    bob: 32,
+    tom: 97,
+    hanna: 96,
+    kate: 98
 }
-
-
-for (let sub of subreddits) {
-    console.log('for...of')
-    console.log(`Visit reddit.com/r/${sub}`);
+for (let person in testScores) {
+    console.log(`${person} scored ${testScores[person]}`);
 }
+console.log(Object.keys(testScores))
+console.log(Object.values(testScores))
+console.log(Object.entries(testScores))
 
-
-const seatingChart = [
-    ['Tom', 'Anthony', 'Maria'],
-    ['Jack', 'Tony', 'Betsy'],
-    ['Sonya', 'Bob']
-]
-
-for (let row of seatingChart) {
-    for (let student of row) {
-        console.log(student)
-    }
+let total = 0;
+let scores = Object.values(testScores);
+for (let score of scores) {
+    total += score;
 }
-
-for (let char of 'Hello world') {
-    console.log(char);
-}
+console.log(total / scores.length);
