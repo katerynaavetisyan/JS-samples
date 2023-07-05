@@ -1,17 +1,21 @@
-// let count = 0;
-// while (count <= 10) {
-//     console.log(count)
-//     count++;
-// }
-
-
-// for (let i = 1; i <= 10; i++) {
-//     console.log(i, "while");
-// }
-
-const SECRET = 'Slava Ukraini';
-let guess = prompt('Enter the secret code...');
-while (guess !== SECRET) {
-    guess = prompt('enter the code...');
+let targetNum = Math.floor(Math.random() * 10);
+let guess = Math.floor(Math.random() * 10);
+while (true) {
+    guess = Math.floor(Math.random() * 10);
+    if (guess === targetNum) {
+        console.log(`correct! Guessed: ${guess} & target was: ${targetNum}`)
+    }
+    else {
+        console.log(`Guessed ${guess}...Incorrect!`);
+    }
 }
-console.log('Congrats you got the secret!!!');
+
+
+let input = prompt("Hey, say something!")
+while (true) {
+    input = prompt(input);
+    if (input.toLowerCase() === "Stop coping me")
+        break;
+
+}
+console.log('Ok you win!');
