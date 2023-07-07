@@ -1,11 +1,10 @@
 
 
-
-function sumArray(arrOfNum) {
-    let sumOfNum = 0;
-    for (let i = 0; i < arrOfNum.length; i++) {
-        sumOfNum += arrOfNum[i];
+function returnDay(num) {
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    if (num < 1 || num > 7) {
+        return null;
+    } else {
+        return days[num - 1];
     }
-    return sumOfNum;
 }
-console.log(sumArray([1, 2, 3, 4]));
