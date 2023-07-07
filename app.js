@@ -1,9 +1,11 @@
-function capitalize(str) {
-    const firstLetter = str[0].toUpperCase();
-    const restOfStr = str.slice(1)
-    const result = firstLetter + restOfStr
-    return result;
+
+
+
+function sumArray(arrOfNum) {
+    let sumOfNum = 0;
+    for (let i = 0; i < arrOfNum.length; i++) {
+        sumOfNum += arrOfNum[i];
+    }
+    return sumOfNum;
 }
-
-
-console.log(capitalize('test'));
+console.log(sumArray([1, 2, 3, 4]));
