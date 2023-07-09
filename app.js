@@ -1,12 +1,18 @@
 
-const square = function (num) {
-    return num * num;
+const square = {
+    area(side) {
+        return side * side;
+    },
+    perimeter(side) {
+        return side * 4;
+    }
 }
 
-const square = function (num) {
-    return Math.pow(num, 2);
-}
-
-const square = function (num) {
-    return num ** 2;
+const square2 = {
+    area: function (side) {
+        return side * side;
+    },
+    perimeter: function (side) {
+        return side * 4;
+    }
 }
