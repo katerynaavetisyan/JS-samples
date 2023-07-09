@@ -1,17 +1,8 @@
-const hen = {
-    name: 'Helen',
-    eggCount: 0,
-    layAnEgg() {
-        this.eggCount++;
-        return 'EGG';
-    }
-};
+const fullNames = [{ first: 'Albus', last: 'Dumbledore' }, { first: 'Harry', last: 'Potter' }, { first: 'Hermione', last: 'Granger' }, { first: 'Ron', last: 'Weasley' }, { first: 'Rubeus', last: 'Hagrid' }, { first: 'Minerva', last: 'McGonagall' }, { first: 'Severus', last: 'Snape' }];
 
-const hen2 = {
-    name: 'Helen',
-    eggCount: 0,
-    layAnEgg: function () {
-        this.eggCount += 1;
-        return 'EGG';
-    }
-};
+
+const firstNames = fullNames.map(function (name) {
+    return name.first;
+});
+
+const firstNames2 = fullNames.map(name => name.first);
