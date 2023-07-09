@@ -1,26 +1,12 @@
-let animal = "Giant Pacific Octopus";
-function observe() {
-    let animal = "Pajama Squid";
-    console.log(animal);
-}
-observe();
 
-const creature = "Common Sea Dragon";
-
-function scubaDive() {
-    const creature = "Spanish Dancer";
-    console.log(creature);
+const square = function (num) {
+    return num * num;
 }
 
-scubaDive();
-
-
-let deadlyAnimal = "Blue-Ringed Octopus";
-
-function handleAnimal() {
-    let deadlyAnimal = "Scorpionfish";
-    console.log(deadlyAnimal);
+const square = function (num) {
+    return Math.pow(num, 2);
 }
 
-handleAnimal();
-console.log(deadlyAnimal)
+const square = function (num) {
+    return num ** 2;
+}
