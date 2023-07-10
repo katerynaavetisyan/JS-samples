@@ -1,6 +1,8 @@
-function calculateDogAge(age) {
-    var dogYears = 7 * age;
-    console.log("Your doggie is " + dogYears + " years old in dog years!");
+function calculateSupply(age, numPerDay) {
+    var maxAge = 100;
+    var totalNeeded = (numPerDay * 365) * (maxAge - age);
+    var message = 'You will need ' + totalNeeded + ' cups of tea to last you until the ripe old age of ' + maxAge;
+    console.log(message);
 }
 
-calculateDogAge(1);
+calculateSupply(28, 36);
