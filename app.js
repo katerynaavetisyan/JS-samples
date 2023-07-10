@@ -1,7 +1,9 @@
-const square = function (num) {
-    return num * num;
+function tellFortune(jobTitle, geoLocation, partner, numKids) {
+    var future = 'You will be a ' + jobTitle + ' in ' + geoLocation + ' and married to ' +
+        partner + ' ' + ' with ' + numKids + ' kids.';
+    console.log(future);
 }
 
-const square2 = function (num) {
-    return Math.pow(num, 2);
-}
+tellFortune('bball player', 'spain', 'Shaq', 3);
+tellFortune('stunt double', 'Japan', 'Ryan Gosling', 3000);
+tellFortune('Elvis impersonator', 'Ukraine', 'The Oatmeal', 0);
