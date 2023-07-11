@@ -1,8 +1,14 @@
-function calculateSupply(age, numPerDay) {
-    var maxAge = 100;
-    var totalNeeded = (numPerDay * 365) * (maxAge - age);
-    var message = 'You will need ' + totalNeeded + ' cups of tea to last you until the ripe old age of ' + maxAge;
-    console.log(message);
+let greet = function () {
+    console.log('Hi!')
+}
+greet()
+
+function callTwice(func) {
+    func();
+    func()
 }
 
-calculateSupply(28, 36);
+function laugh() {
+    console.log('Hahahahahahah');
+}
+callTwice(laugh)
