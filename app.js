@@ -1,9 +1,19 @@
-function celsiusToFahrenheit(celsius) {
-    var celsiusInF = (celsius * 9) / 5 + 32;
-    console.log(celsius + '°C is ' + celsiusInF + '°F');
+
+const square = {
+    area(side) {
+        return side * side;
+    },
+    perimeter(side) {
+        return side * 4;
+    }
 }
 
-function fahrenheitToCelsius(fahrenheit) {
-    var fahrenheitInC = ((fahrenheit - 32) * 5) / 9;
-    console.log(fahrenheit + '°F is ' + fahrenheitInC + '°C');
+const square2 = {
+    area: function (side) {
+        return side * side;
+    },
+    perimeter: function (side) {
+        return side * 4;
+    }
 }
+
