@@ -1,10 +1,11 @@
-const person = {
-    first: 'Kate',
-    last: 'Ave',
-    fullName() {
-        return `${this.first} ${this.last}`
+const cat = {
+    name: 'Blue Steele',
+    color: 'grey',
+    breed: 'scottish fold',
+    meow() {
+        console.log(`${this.name} says MEEEEOOOOWWWW`);
     }
 }
-console.log(person.fullName());
-console.log(person.first = 'Artur');
-console.log(person.fullName());
+const meow2 = cat.meow;
+console.log(cat.meow());
+console.log(meow2());
