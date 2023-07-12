@@ -1,11 +1,19 @@
-const cat = {
-    name: 'Blue Steele',
-    color: 'grey',
-    breed: 'scottish fold',
-    meow() {
-        console.log(`${this.name} says MEEEEOOOOWWWW`);
+
+const hen = {
+    name: 'Helen',
+    eggCount: 0,
+    layAnEgg() {
+        this.eggCount++;
+        return 'EGG';
     }
-}
-const meow2 = cat.meow;
-console.log(cat.meow());
-console.log(meow2());
+};
+
+
+const hen2 = {
+    name: 'Helen',
+    eggCount: 0,
+    layAnEgg: function () {
+        this.eggCount += 1;
+        return 'EGG';
+    }
+};
