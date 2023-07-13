@@ -1,31 +1,17 @@
-let golfGames = {
-  tournament: "The Masters",
-  players:
-    [
-      { name: "T. Woods", age: 37 },
-      { name: "P. Mickelson", age: 43 }
-    ],
-  showAllGames: function () {
-    currObject = this;
-    this.players.forEach(function (player) {
-      console.log(player.name + ' is playing at ' + currObject.tournament);
-    })
+const call = {
+  caller: "mom",
+  says: function () {
+    console.log(`Hey, ${this.caller} just called.`);
   }
-}
+};
 
-golfGames.showAllGames();
+call.says();
 
-function setBodyTextColor(color) {
-  this.body.style.color = color;
-}
+const call2 = {
+  caller: "mom",
+  says: () => {
+    console.log(`Hey, ${this.caller} just called.`);
+  }
+};
 
-document.setBodyTextColor = setBodyTextColor;
-document.setBodyTextColor("green");
-document.setBodyTextColor("blue");
-
-function getBodyTextColor() {
-  return this.body.style.color;
-}
-
-document.getBodyTextColor = getBodyTextColor;
-console.log(document.getBodyTextColor());
+call.says();
