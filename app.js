@@ -1,17 +1,16 @@
-const call = {
-  caller: "mom",
-  says: function () {
-    console.log(`Hey, ${this.caller} just called.`);
+try {
+  hello.toUpperCase();
+
+} catch {
+  console.log('Error!');
+}
+// hello.toUpperCase();
+console.log('After!');
+
+function yell(msg) {
+  try {
+    console.log(msg.toUpperCase().repeat(3));
+  } catch (e) {
+    console.log("Please pass a string next time!");
   }
-};
-
-call.says();
-
-const call2 = {
-  caller: "mom",
-  says: () => {
-    console.log(`Hey, ${this.caller} just called.`);
-  }
-};
-
-call.says();
+}
