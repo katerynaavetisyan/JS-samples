@@ -1,44 +1,31 @@
-function getThis() {
-  return this;
+let golfGames = {
+  tournament: "The Masters",
+  players:
+    [
+      { name: "T. Woods", age: 37 },
+      { name: "P. Mickelson", age: 43 }
+    ],
+  showAllGames: function () {
+    currObject = this;
+    this.players.forEach(function (player) {
+      console.log(player.name + ' is playing at ' + currObject.tournament);
+    })
+  }
 }
 
-const obj1 = { name: "obj1" };
-const obj2 = { name: "obj2" };
+golfGames.showAllGames();
 
-obj1.getThis = getThis;
-obj2.getThis = getThis;
-
-console.log(obj1.getThis());
-console.log(obj2.getThis());
-
-
-const obj3 = {
-  __proto__: obj1,
-  name: "obj3",
-};
-
-console.log(obj3.getThis());
-
-const obj4 = {
-  name: "obj4",
-  getThis() {
-    return this;
-  },
-};
-
-const obj5 = { name: "obj5" };
-
-obj5.getThis = obj4.getThis;
-console.log(obj5.getThis());
-
-
-function getThis() {
-  return this;
+function setBodyTextColor(color) {
+  this.body.style.color = color;
 }
 
-function logThis() {
-  "use strict";
-  console.log(this);
+document.setBodyTextColor = setBodyTextColor;
+document.setBodyTextColor("green");
+document.setBodyTextColor("blue");
+
+function getBodyTextColor() {
+  return this.body.style.color;
 }
 
-[1, 2, 3].forEach(logThis);
+document.getBodyTextColor = getBodyTextColor;
+console.log(document.getBodyTextColor());
