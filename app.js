@@ -1,64 +1,44 @@
-
-const test = {
-  prop: 42,
-  func: function () {
-    return this.prop;
-  },
-};
-
-console.log(test.func());
-
-
-
-fullName: function() {
-  return this.firstName + " " + this.lastName;
-}
-
-function myFunction() {
+function getThis() {
   return this;
 }
 
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  id: 5566,
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
-  }
+const obj1 = { name: "obj1" };
+const obj2 = { name: "obj2" };
+
+obj1.getThis = getThis;
+obj2.getThis = getThis;
+
+console.log(obj1.getThis());
+console.log(obj2.getThis());
+
+
+const obj3 = {
+  __proto__: obj1,
+  name: "obj3",
 };
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  id: 5566,
-  myFunction: function () {
+
+console.log(obj3.getThis());
+
+const obj4 = {
+  name: "obj4",
+  getThis() {
     return this;
-  }
+  },
 };
-const person1 = {
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
-  }
+
+const obj5 = { name: "obj5" };
+
+obj5.getThis = obj4.getThis;
+console.log(obj5.getThis());
+
+
+function getThis() {
+  return this;
 }
 
-const person2 = {
-  firstName: "John",
-  lastName: "Doe",
+function logThis() {
+  "use strict";
+  console.log(this);
 }
 
-
-person1.fullName.call(person2);
-
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
-  }
-}
-
-const member = {
-  firstName: "Hege",
-  lastName: "Nilsen",
-}
-
-let fullName = person.fullName.bind(member);
+[1, 2, 3].forEach(logThis);
