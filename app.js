@@ -1,38 +1,24 @@
-const square = (x) => {
+const square = x => {
   return x * x;
 }
-console.log(square(63));
+console.log(square(5));
 
-
-const sum = (x, y) => {
-  return x + y;
-}
-console.log(sum(5, 4));
-
-const add = (x, y) => {
-  return x + y;
-}
-console.log(add(4, 9));
-
-
-const rollDie = () => {
-  return Math.floor(Math.random() * 5) + 1
-}
+const rollDie = () => (
+  Math.floor(Math.random() * 6) + 1
+)
 console.log(rollDie());
 
-const square2 = num => {
-  return num * num;
+const isEven = function (num) {
+  return num % 2 === 0;
 }
-console.log(square2(35));
+console.log(isEven(1));
 
-const greet = (name) => {
-  return `Hey ${name}!`;
+const isEven2 = (num) => {
+  return num % 2 === 0;
 }
-console.log(greet('Anna'));
+console.log(isEven2(6));
 
+const isEven3 = num => {
 
-const greet2 = name => `Hey ${name}!`;
-
-console.log(greet2('Maria'));
-
-
+}
+console.log(isEven3(5));
