@@ -1,29 +1,11 @@
-const movies = [
-  {
-    title: 'Amadeus',
-    score: 99
-  },
-  {
-    title: 'Stand By Me',
-    score: 85
-  },
-  {
-    title: 'Paradise',
-    score: 95
-  }
-]
+console.log("Hello!...");
+setTimeout(() => {
+  console.log("...are you still there?");
+}, 3000)
+console.log("Goodbye!");
 
-const newMovies = movies.map(function (movie) {
-  return `${movie.title} - ${movie.score / 10}`
-})
-console.log(newMovies);
-
-const newMovies2 = movies.map(movie => {
-  return `${movie.title} - ${movie.score / 100}`
-})
-console.log(newMovies2);
-
-const newMovies3 = movies.map(movie => (
-  `${movie.title} - ${movie.score / 1000}`
-))
-console.log(newMovies3); 
+const id = setInterval(() => {
+  console.log(Math.random());
+}, 2000)
+console.log(id);
+clearInterval(id)
