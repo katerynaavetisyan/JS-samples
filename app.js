@@ -1,11 +1,8 @@
-console.log("Hello!...");
-setTimeout(() => {
-  console.log("...are you still there?");
-}, 3000)
-console.log("Goodbye!");
-
-const id = setInterval(() => {
-  console.log(Math.random());
-}, 2000)
-console.log(id);
-clearInterval(id)
+const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+const odds = nums.filter(n => {
+  return n % 2 === 1;
+})
+console.log(nums);
+console.log(odds);
+const smallNums = nums.filter(n => n < 5);
+console.log(smallNums);
