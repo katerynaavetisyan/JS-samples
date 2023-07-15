@@ -1,8 +1,6 @@
-
-
-const numbers = nums.filter(n => {
-  return n === 4
-})
-console.log(nums);
-console.log(numbers);
-
+function validUserNames(arr) {
+  const filteredArr = arr.filter(function (name) {
+    return name.length < 10;
+  });
+  return filteredArr;
+}
