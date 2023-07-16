@@ -1,12 +1,4 @@
-function positive_negative(x, y) {
-    if ((x < 0 && y > 0) || x > 0 && y < 0) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-console.log(positive_negative(2, 2));
-console.log(positive_negative(-2, 2));
-console.log(positive_negative(2, -2));
-console.log(positive_negative(-2, -2));
+const var_name = 'abcd';
+const n = 120;
+this[var_name] = n;
+console.log(this[var_name])
