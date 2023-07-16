@@ -1,8 +1,12 @@
-today = new Date();
-var cmas = new Date(today.getFullYear(), 11, 25);
-if (today.getMonth() == 11 && today.getDate() > 25) {
-    cmas.setFullYear(cmas.getFullYear() + 1);
+function positive_negative(x, y) {
+    if ((x < 0 && y > 0) || x > 0 && y < 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
-var one_day = 1000 * 60 * 60 * 24;
-console.log(Math.ceil((cmas.getTime() - today.getTime()) / (one_day)) +
-    " days left until Christmas!");
+console.log(positive_negative(2, 2));
+console.log(positive_negative(-2, 2));
+console.log(positive_negative(2, -2));
+console.log(positive_negative(-2, -2));
