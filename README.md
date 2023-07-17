@@ -1,1 +1,1 @@
-# JS-samples
+# JavaScript
