@@ -1,12 +1,11 @@
-function allEvens(arr) {
-    return arr.every(function (num) {
-        return num % 2 === 0;
-    });
-}
+const prices = [9.99, 1.50, 19.99, 49.99, 30.50];
+// let total = 0;
+// for (let price of prices) {
+//     total += price
+// }
+// console.log(total);
 
-const allEvens = function (arr) {
-    return arr.every(num => num % 2 === 0);
-
-
-    const allEvens = arr => arr.every(num => num % 2 === 0)
-}
+const total = prices.reduce((total, price) => {
+    return total + price
+})
+console.log(total);
