@@ -1,4 +1,11 @@
-const exams = [80, 98, 92, 78, 88, 90, 89, 81, 77]
+function allEvens(arr) {
+    return arr.every(function (num) {
+        return num % 2 === 0;
+    });
+}
 
-console.log(exams.every(score => score >= 75));
-console.log(exams.some(score => score >= 75));
+const allEvens = function (arr) {
+    return arr.every(num => num % 2 === 0);
+
+
+    const allEvens = arr => arr.every(num => num % 2 === 0);
