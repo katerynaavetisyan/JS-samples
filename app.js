@@ -8,4 +8,5 @@ const allEvens = function (arr) {
     return arr.every(num => num % 2 === 0);
 
 
-    const allEvens = arr => arr.every(num => num % 2 === 0);
+    const allEvens = arr => arr.every(num => num % 2 === 0)
+}
