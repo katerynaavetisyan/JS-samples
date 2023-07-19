@@ -1,13 +1,7 @@
-const person = {
-    firsName: 'Kate',
-    lastName: 'Ave',
-    fullName: function () {
-        return `${this.firsName} ${this.lastName}`
-    },
-    shoutName: function () {
-        setTimeout(() => {
-            console.log(this.fullName());
-        }, 3000)
+function rollDie(numSides) {
+    if (numSides === undefined) {
+        numSides = 6
     }
+    return Math.floor(Math.random() * numSides) + 1
 }
-console.log(person.fullName());
+console.log(rollDie());
