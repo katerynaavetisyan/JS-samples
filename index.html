@@ -9,7 +9,24 @@
 
 <body>
     <h1>JavaScript </h1>
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="usrname">Username</label>
+            <input type="text" id="usrname" name="usrname" required>
 
+            <label for="psw">Password</label>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
     <script src="app.js"></script>
 </body>
 
