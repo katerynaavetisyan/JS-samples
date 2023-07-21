@@ -1,9 +1,11 @@
-const nums = [2, 5, 63, 596, 12, 3, 4, 485]
-console.log(Math.max(...nums));
+const feline = { legs: 4, family: 'Felidae' }
+const canine = { family: 'Caninoe', furry: true }
 
+const dogs = { ...canine, isPet: true }
+console.log(dogs);
 
-const cats = ['Blake', 'Diana']
-const dogs = ['Rodik', 'Rex', 'King']
-console.log([...dogs, ...cats]);
-const allPets = [...cats, ...dogs, 'Speedy']
-console.log(allPets);
+const lion = { ...feline, genus: 'Panthera' }
+console.log(lion);
+
+const catDog = { ...feline, ...canine }
+console.log(catDog);
