@@ -1,4 +1,13 @@
-const colorArr = ["red", "yellow", "blue", "green", "white", "black"];
+let a, b, rest;
+[a, b] = [10, 20];
 
-const [first, second] = colorArr;
-console.log(first, second);
+console.log(a);
+// Expected output: 10
+
+console.log(b);
+// Expected output: 20
+
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+
+console.log(rest);
+// Expected output: Array [30, 40, 50]
