@@ -1,11 +1,4 @@
-function sumAll(...args) { // args is the name for the array
-    let sum = 0;
+const colorArr = ["red", "yellow", "blue", "green", "white", "black"];
 
-    for (let arg of args) sum += arg;
-
-    return sum;
-}
-
-alert(sumAll(1)); // 1
-alert(sumAll(1, 2)); // 3
-alert(sumAll(1, 2, 3)); // 6
+const [first, second] = colorArr;
+console.log(first, second);
