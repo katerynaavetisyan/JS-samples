@@ -1,10 +1,15 @@
-const scores = [956131, 684846, 65651, 351, 42362, 36849, 34686]
+const user = {
+    email: 'harvey@gmail.com',
+    password: 'dsfhbstnbdfb4758',
+    firstName: 'Harvey',
+    lastName: 'Milk',
+    born: 1930,
+    died: 1978,
+    city: 'San Francisco',
+    state: 'California'
+}
+const { email, firstName, lastName, city, state } = user;
 
-const highScore = scores[0];
-const secondHighScore = scores[1];
-
-const [gold, silver, bronze] = scores;
-
-console.log(gold);
-console.log(silver);
-console.log(bronze);
+console.log(email);
+console.log(lastName);
+console.log(city);
