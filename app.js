@@ -17,4 +17,4 @@ console.log(city);
 
 const { born: birthYear, died: deathYear = 'N/A' } = user;
 console.log(birthYear);
-console.log(deathYear);
+
