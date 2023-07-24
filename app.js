@@ -1,13 +1,10 @@
-let a, b, rest;
-[a, b] = [10, 20];
+const scores = [956131, 684846, 65651, 351, 42362, 36849, 34686]
 
-console.log(a);
-// Expected output: 10
+const highScore = scores[0];
+const secondHighScore = scores[1];
 
-console.log(b);
-// Expected output: 20
+const [gold, silver, bronze] = scores;
 
-[a, b, ...rest] = [10, 20, 30, 40, 50];
-
-console.log(rest);
-// Expected output: Array [30, 40, 50]
+console.log(gold);
+console.log(silver);
+console.log(bronze);
