@@ -24,9 +24,12 @@ console.log(birthYear);
 // console.log(fullName(user));
 
 
-function fullName(user) {
-    const { firstName, lastName } = user;
-    return `${firstName} ${lastName}`
-}
+// function fullName(user) {
+//     const { firstName, lastName } = user;
+//     return `${firstName} ${lastName}`
+// }
 console.log(fullName(user));
 
+function fullName({ firstName, lastName }) {
+    return `${firstName} ${lastName}`
+}
