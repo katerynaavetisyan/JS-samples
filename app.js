@@ -5,4 +5,4 @@ let getDetails = ([name_of_an_employee, employee_id, employee_designation]) => {
     );
 };
 
-getDetails(employee_details);
+getDetails(employee_details); 
