@@ -1,8 +1,9 @@
+function celsiusToFahrenheit(celsius) {
+    var celsiusInF = (celsius * 9) / 5 + 32;
+    console.log(celsius + '°C is ' + celsiusInF + '°F');
+}
 
-let getDetails = ([name_of_an_employee, employee_id, employee_designation]) => {
-    console.log(
-        `Employee's name : ${name_of_an_employee} , Employee's ID: ${employee_id}, Employee's Designation: ${employee_designation}`
-    );
-};
-
-getDetails(employee_details); 
+function fahrenheitToCelsius(fahrenheit) {
+    var fahrenheitInC = ((fahrenheit - 32) * 5) / 9;
+    console.log(fahrenheit + '°F is ' + fahrenheitInC + '°C');
+}
