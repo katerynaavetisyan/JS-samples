@@ -1,9 +1,9 @@
-function tellFortune(jobTitle, geoLocation, partner, numKids) {
-    var future = 'You will be a ' + jobTitle + ' in ' + geoLocation + ' and married to ' +
-        partner + ' ' + ' with ' + numKids + ' kids.';
-    console.log(future);
+
+function calculateDogAge(age) {
+    var dogYears = 7 * age;
+    console.log("Your doggie is " + dogYears + " years old in dog years!");
 }
 
-tellFortune('bball player', 'spain', 'Shaq', 3);
-tellFortune('stunt double', 'Japan', 'Ryan Gosling', 3000);
-tellFortune('Elvis impersonator', 'Russia', 'The Oatmeal', 0);
+calculateDogAge(1);
+calculateDogAge(0.5);
+calculateDogAge(12);
